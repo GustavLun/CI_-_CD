@@ -3,6 +3,6 @@ class Register:
         self.registers = []
 
 
-    def register_new_register(self, member, cd):
-        self.registers.append(member)
-        cd.add_name_in_registry(member)
+    def register_new_register(self, name, cd):
+        self.registers.append(name)
+        cd.add_name_in_registry(name)
