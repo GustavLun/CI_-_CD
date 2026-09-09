@@ -1,6 +1,10 @@
+name: Demo CI/CD
+
 on:
-  pull-request:
+  push:
     branches: ["main"]
+  pull_request:
+    branchens: ["main"]
 
 jobs:
   build-and-test:
