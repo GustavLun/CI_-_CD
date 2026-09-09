@@ -38,6 +38,15 @@ på mitt jobb sitter alla i sin egna branch, vi jobbar separat på egna saker, n
 dev branchen i detta fall aggerar som en test branch som skall vara som en spegling av main branchen. När man når en milestone som är stabil på dev, mergas den till main.
 målet är såklart att när projektet är klart är det main branchen som publiceras.
 ---
-4. 
-   
+4. En pull request är en förfrågan om att få merga sin branch till en annan. Denna förfrågan tillåter då övriga att granska pushen innan den godkänns och mergas.
+---
+
+# 2. Projekt
+Sätt upp ett projekt på GitHub som stöder CI.
+
+- workflow
+- konfigurationsfiler: requirements.txt, pytest.ini, conftest.py setup.cfg
+- skapa minst två testfall: ett unit test och ett integration test; använd markers
+- när man pushar till main ska projektet byggas, lintas och testas (unit och integration)
+
 
