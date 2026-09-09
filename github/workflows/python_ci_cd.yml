@@ -21,7 +21,7 @@ jobs:
           pip install flake8 pytest
 
       - name: Linta koden med flake8
-        run: flake8 tests
+        run: flake8 src tests
 
       - name: Kör testerna med pytest
         run: pytest --maxfail=1 --disable-warnings -q
