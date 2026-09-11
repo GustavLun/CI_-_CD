@@ -51,7 +51,9 @@ Sätt upp ett projekt på GitHub som stöder CI.
 
 ---
 I bilden nedan kan vi se att vi verktställt en korrekt workflow.
+
 ![img.png](img.png)
+
 Vi har [requirements](requirements.txt), [pytest.ini](pytest.ini), [conftest](conftest.py) och ``Setup.cfg`` skippades på handläggaren begäran.
 
 koden i workflow ser ut som följande 
@@ -98,9 +100,9 @@ När registrering skes skall uppgifterna från registrering även läggas i ett 
 För och främst gjordes unit tests, [test_custom_details](tests/unit/test_custom_details.py) och [test_register](tests/unit/test_register.py).
 Här testas dessa separat, register använder sig av den mocker så den är automatiskt kopplad till den originella custom_details. Denna skulle hetat customer_details men innehåller en felstavning.
 
-Sen kommer integrations-teste, [test_integration](tests/integration/test_integration.py).
+Sen kommer integration-test, [test_integration](tests/integration/test_integration.py).
 
 ---
-Pushar vi något till git så körs workflowet nedan finns bilaga på fungerande workflow.
+Pushar vi något till git så körs workflowet nedan finns bilagor på fungerande workflow.
 ![img_1.png](img_1.png)
 ![img_2.png](img_2.png)
